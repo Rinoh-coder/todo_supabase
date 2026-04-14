@@ -1,8 +1,10 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Outlet } from "react-router-dom";
+import supabase from "@/supabase/supabaseClient";
 
 const Layout = () => {
+  console.log(supabase);
   return (
     <>
       <Header />
